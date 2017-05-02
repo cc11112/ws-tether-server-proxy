@@ -16,7 +16,7 @@ var url  = require('url'),
 //var path = args[1];
 var port = args[2],
     server = ws.listen(port, function () {
-      console.log("server ploxy start:"+port);
+      console.log("server proxy start:"+port);
     });
 
 var tcpClients = {};
@@ -112,7 +112,7 @@ server.on("connection",function(socket) {
         errhandler();
       });
       srvSocket.on('error',function(){
-        console.log('soclet error');
+        console.log('socket error');
         errhandler();
       });
       srvSocket.on('close',function(){
