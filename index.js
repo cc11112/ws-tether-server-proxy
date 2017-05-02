@@ -14,7 +14,7 @@ var url  = require('url'),
 
 //var node = args[0];
 //var path = args[1];
-var port = args[2],
+var port = (process.env.PORT || 5000),
     server = ws.listen(port, function () {
       console.log("server proxy start:"+port);
     });

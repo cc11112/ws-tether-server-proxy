@@ -1,1 +1,1 @@
-web: node index.js 61622
+web: node index.js $PORT
